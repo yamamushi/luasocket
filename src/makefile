@@ -14,11 +14,11 @@
 
 # PLAT: linux macosx win32 mingw
 # platform to build for
-PLAT?=linux
+PLAT?=macosx
 
 # LUAV: 5.1 5.2
 # lua version to build against
-LUAV?=5.1
+LUAV?=5.3
 
 # MYCFLAGS: to be set by user if needed
 MYCFLAGS?=
@@ -34,11 +34,11 @@ DEBUG?=NODEBUG
 # where lua headers are found for macosx builds
 # LUAINC_macosx:
 # /opt/local/include
-LUAINC_macosx_base?=/opt/local/include
+LUAINC_macosx_base?=/usr/local/include
 LUAINC_macosx?=$(LUAINC_macosx_base)/lua/$(LUAV)
 # FIXME default should this default to fink or to macports?
 # What happens when more than one Lua version is installed?
-LUAPREFIX_macosx?=/opt/local
+LUAPREFIX_macosx?=/usr/local
 CDIR_macosx?=lib/lua/$(LUAV)
 LDIR_macosx?=share/lua/$(LUAV)
 

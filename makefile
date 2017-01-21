@@ -9,7 +9,7 @@
 #   install-both-unix      also install unix-only
 #   print	           print the build settings
 
-PLAT?= linux
+PLAT?= macosx
 PLATS= macosx linux win32 mingw freebsd solaris
 
 all: $(PLAT)
